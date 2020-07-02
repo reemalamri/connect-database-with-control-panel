@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="SmartMethods, Robot control Panel">
+	<link rel="icon" type="image/x-icon" href="https://s-m.com.sa/images/t1.png">
+    <title>Robot Control Panel|SmartMethods</title>
+   
+    <style> 
+    	div.background {
+    		height: 900px;
+    		width: 1450px;
+			background: url("https://p3.ifengimg.com/a/2017_14/56e1a64045d4f68_size155_w1600_h1200.jpg") no-repeat scroll top left  #cccccc;
+			margin: auto;
+		}
+    	div.one {
+    		/*div style*/
+    		width: 1400px;
+    		height:180px;
+    		padding: 10px;
+    		background-color:rgba(1,1,1,0.2);
+    		margin: auto ;
+    		/*font style*/
+    		font-size: 30px;
+    		color: white;
+    		text-indent: 20px;
+    		text-transform: capitalize;	
+	    }
+	    div.title{
+	    	width: 1100px;
+	    	float: left;
+	    }
+	    div.icon{
+	    	float: left;
+	    }
+	    div.two{
+	    	/*div style*/
+	    	width: 1400px;
+    		padding: 10px;
+            margin: auto;
+	    	/*font style*/
+	    	font-size: 28px;
+	    	letter-spacing: 2px;
+	    	text-indent: 5px;
+	    	text-transform: capitalize;	
+	    }
+	    .button{
+	     	height:100px;
+	     	width:150px;
+	     	margin-top:27.5px;
+	     	margin-left:2%;
+	     	margin-right:0;
+	     	margin-bottom:0
+	     	border-radius: 12px;
+	     	font-size: 20px;
+	     	background-color: rgba(1,1,1,0.2);
+	     	color: white;
+	     	border: 2px solid #e7e7e7;
+	     	}
+	    .button:hover {
+	    	background-color: rgb(253, 91, 95, 0.5); }
+	    .button1{
+	     	height:100px;
+	     	width:150px;
+	     	margin-top:27.5px;
+	     	margin-left:14.5%;
+	     	margin-right:0;
+	     	margin-bottom:0
+	     	border-radius: 12px;
+	     	font-size: 20px;
+	     	background-color: rgba(1,1,1,0.2);
+	     	color: white;
+	     	border: 2px solid #e7e7e7;
+	     	}
+	     	.button1:hover {
+	     		background-color: rgb(253, 91, 95, 0.5); }
+
+	</style>
+	
+</head>
+<body>
+	<div class="background">
+		<div class="one">
+			<div class="title">
+				<h1>robot control panel</h1>
+			</div>
+			<div class="icon">
+				<img src="https://s-m.com.sa/images/logo.png" alt="SmartMethods icon" />
+			</div>	
+		</div>
+		<div class="two"> 
+			<p>you can use this  webpage to control your robot movement.</p>
+		</div>
+		<div class="buttons">
+			
+			<form   id='myform' action="auto_controlRobot.php" method="POST"> 
+				<div class="top">
+					<input  type="submit" class="button1" value="Go To Front" name="Forward"  >
+					<br>
+					<input  type="submit" class="button" value="Go To Left" name="Left1"  >
+					<input  type="submit" class="button"  value="Stop" name="Stop1"  >
+					<input  type="submit" class="button" value="Go To Right" name="Right1" >
+				    <br>
+					<input  type="submit" class="button1"  value="Go To Back" name="Backward"  >
+				</div>
+			</form>
+			
+		</div>
+	</div> 
+	
+</body>
+</html>
