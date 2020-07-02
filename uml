@@ -1,0 +1,3 @@
+http://127.0.0.1/php_reem/CP.html
+database
+http://127.0.0.1/phpmyadmin/sql.php?server=1&db=control_robot&table=auto_move&pos=0
